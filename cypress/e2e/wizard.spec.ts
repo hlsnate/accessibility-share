@@ -29,7 +29,7 @@ describe('Wizard Form', () => {
     cy.log('Wizard Step One')
     cy.findByRole('heading', { name: /Step 1/}).should('exist')
     cy.findByLabelText(/name/i).clear().type('Felix')
-    cy.findByLabelText(/phone/i).clear().type('617-123-4567')
+    cy.findByLabelText(/phone/i).clear().type('6171234567')
     cy.findByLabelText(/when/i).type('2022-05-12')
     cy.findByLabelText(/i want to add/i).check()
     cy.findByLabelText(/number one/i).clear().type('93')

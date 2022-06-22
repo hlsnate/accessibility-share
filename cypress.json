@@ -1,7 +1,0 @@
-{
-  "componentFolder": "src/lib",
-  "testFiles": "**/*spec.ts",
-  "baseUrl": "http://localhost:3000",
-  "viewportHeight": 1200,
-  "experimentalStudio": true
-}
