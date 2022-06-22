@@ -1,0 +1,90 @@
+@import '@fontsource/fira-mono';
+
+:root {
+  --small: 400px;
+  --medium: 800px;
+  --dark-grey: #468;
+  --light-grey: #bcd;
+  --muted: #757575;
+  --box: green;
+  --box-highlight: orange;
+  --red: #dd0000;
+  --blue: #0000dd;
+  --font-header: Georgia, 'Times New Roman', Times, serif;
+  --font-body: 'Open Sans', Tahoma, sans-serif;
+  --font-mono: 'Fira Mono', Monaco, monospace;
+  font-family: var(--font-body);
+}
+
+@custom-selector :--headings h1, h2, h3, h4, h5, h6;
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #444;
+  background-color: inherit;
+}
+body * {
+  box-sizing: border-box;
+  font-size: 1rem;
+  font-family: var(--font-body);
+}
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+pre {
+  font-family: var(--font-mono);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 100;
+  font-style: italic;
+  color: var(--dark-grey);
+  font-family: var(--font-header);
+}
+h1 {
+  font-size: 1.7rem;
+  border-bottom: 1px solid var(--light-grey);
+}
+h2 {
+  font-size: 1.5rem;
+}
+h3 {
+  font-size: 1.3rem;
+}
+h4 {
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+h5 {
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  color: white;
+  background-color: #555;
+  border: none;
+  border-radius: 0.7em;
+  outline-offset: 3px;
+  margin: 3px;
+}
+button:hover,
+button:focus {
+  cursor: pointer;
+}
+button[type='submit'] {
+  background: var(--blue);
+}
+button[type='reset'] {
+  background: var(--red);
+}

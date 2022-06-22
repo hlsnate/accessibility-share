@@ -1,0 +1,15 @@
+{
+	"extends": "./.svelte-kit/tsconfig.json",
+	"compilerOptions": {
+		"esModuleInterop": true,
+		"types": [
+			"jest",
+			"node",
+			"@testing-library/jest-dom"
+		],
+	},
+	"include": [
+		"__tests__",
+		"./jest-setup.ts",
+	]
+}
